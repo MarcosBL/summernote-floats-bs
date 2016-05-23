@@ -1,7 +1,8 @@
-# summernote-floats-bs
-Bootstrap Floats for [Summernote WYSIWYG Editor](http://summernote.org/)
+## Bootstrap Floats for [Summernote WYSIWYG Editor](http://summernote.org/)
 
 Replace (or extend) image popover buttons (using float: attributes) with a new set of buttons that inject proper Bootstrap classes (pull-right / pull-left / none) while keeping any other class in the image.
+
+This not only keeps Bootstrap naming convention, but makes it much easier to style margins/paddings/etc on floated images, as you can just target the classes.
 
 ![Screenshot](screenshot.jpg?raw=true "Screenshot")
 
