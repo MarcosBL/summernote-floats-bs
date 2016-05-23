@@ -11,9 +11,9 @@ This not only keeps Bootstrap naming convention, but makes it much easier to sty
 First include ````summernote-floats-bs.js```` or it's minified version ````summernote-floats-bs.min.js```` after ````summernote````
 
 ```html
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.min.js"></script>
 
 <script src="summernote-floats-bs.min.js"></script>
 ```
