@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/Article" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.css" rel="stylesheet">
+</head>
+
+<body role="document">
+	<div class="container">
+		<h2>Tip: Use code view to check how the image class change (and keep other classes)</h2>
+		<textarea name='texto' id='texto' class='form-control hidden'>
+			<h1>Arya Stark: A girl has no name</h1>
+			<img src="http://i.imgur.com/aNOfMJd.jpg" class="img-rounded pull-right" style="width:25%"/>
+			<p style="text-align: justify;">The more she shat i'm no one arianne egg the north remembers the things I do for love oberyn lannisport pyke donal noye tyene. Reach god's eye we do not kneel sunspear bael the bard. Hot pie chett renly marillion. Jaime Lannister sends his regards the things I do for love castle black, tommen loras roose bolton riverrun oh my sweet summer child theon patchface daenerys. Howland reed ramsay gift summerhall your joy will turn to ashes in your mouth jaime Lannister sends his regards iron throne.</p>
+			<p style="text-align: justify;">Gregor i dreamed that I was old haunted forest, crownlands robb doran roose bolton qarth we do not kneel lemonwood patchface. Howland reed lannisport ghost king's landing haunted forest, jojen gendry eddard. Obara aemon brandon stark greywind. Ramsay aegon howland reed pyke. Riverrun summer rosby tommen storm's end stormlands, ygritte crownlands dorne. Daenerys osha oh davos.</p>
+			<p style="text-align: justify;">Gerold hightower Wun Weg Wun Dar Wun meryn trant greywind valyria, nightfort edmure catelyn. Tormund dunk narrow sea, the north remembers aemon fingers chett bloodraven viserion gendry alliser thorne tysha. Aenys your joy will turn to ashes in your mouth catelyn valar morghulis quentyn, ghost aegon horn hill donal noye pate the knights of summer hodor gerold hightower lord of bones. Haunted forest tormund ashara oswell whent eddard, roose bolton aerys north osha shireen nightfort</p>
+			<p style="text-align: justify;">And now his watch is ended hot pie howland reed pycelle. Storm's end loras and now his watch is ended winterfell brandon stark aerys brienne bael the bard darkstar kevan deepwood motte egg shae victarion our knees do not bend easily. Joffrey braavos walder frey, gift the knights of summer shae your joy will turn to ashes in your mouth shireen kevan balon quaithe. Howland reed your joy will turn to ashes in your mouth jaime Lannister sends his regards iron throne.</p>
+			<p style="text-align: justify;">Renly only Cat viserion brandon stark land of always winter. Castle black vaes dothrak olenna pate, lysa jon snow fear cuts deeper than swords tarth. Drogon arianne i dreamed that I was old, brienne daenerys arthur dayne vaes dothrak harrenhal maester luwin I'm no one shireen lady. pycelle aemon, podrick howland reed meereen brave companions lemonwood white walkers robert baratheon.</p>
+		</textarea>
+		<p class="text-center"><a href="https://github.com/MarcosBL/summernote-floats-bs">Bootstrap Floats for Summernote</a></p>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.min.js"></script>
+
+	<script src="summernote-floats-bs.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#texto').summernote({
+				lang: 'en-US',
+				dialogsInBody: true,
+				popover: {
+					image: [
+					['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+					/* ['float', ['floatLeft', 'floatRight', 'floatNone']], */
+					/* Those are the old regular float buttons */
+					['floatBS', ['floatBSLeft', 'floatBSNone', 'floatBSRight']],
+					/* Those come from the BS plugin, in any order, you can even keep both! */
+					['remove', ['removeMedia']],
+					],
+				}
+			});
+		});
+	</script>
+
+	<style>
+		/* Just for the demo */
+
+		.pull-right { margin: 0 0 10px 20px; }
+		.pull-left { margin: 0 20px 10px 0; }
+	</style>
+</body>
+</html>
