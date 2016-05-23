@@ -31,8 +31,8 @@ $(document).ready(function() {
 			['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
 			/* ['float', ['floatLeft', 'floatRight', 'floatNone']], */
 			/* Those are the old regular float buttons */
-			['floatBS', ['floatBSLeft', 'floatBSRight', 'floatBSNone']],
-			/* Those come from the BS plugin, you can even keep both! */
+			['floatBS', ['floatBSLeft', 'floatBSNone', 'floatBSRight']],
+			/* Those come from the BS plugin, in any order, you can even keep both! */
 			['remove', ['removeMedia']],
 			],
 		}
