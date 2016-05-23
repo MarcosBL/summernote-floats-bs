@@ -4,6 +4,8 @@ Replace (or extend) image popover buttons (using float: attributes) with a new s
 
 This not only keeps Bootstrap naming convention, but makes it much easier to style margins/paddings/etc on floated images, as you can just target the classes.
 
+You can try a demo at http://marcosbl.github.io/summernote-floats-bs/demo/
+
 ![Screenshot](screenshot.jpg?raw=true "Screenshot")
 
 ## Installation
