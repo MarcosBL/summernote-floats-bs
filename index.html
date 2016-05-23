@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>summernote-floats-bs by MarcosBL</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>summernote-floats-bs</h1>
+        <p>Bootstrap Floats for Summernote WYSIWYG Editor</p>
+
+        <p class="view"><a href="https://github.com/MarcosBL/summernote-floats-bs">View the Project on GitHub <small>MarcosBL/summernote-floats-bs</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/MarcosBL/summernote-floats-bs/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/MarcosBL/summernote-floats-bs/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/MarcosBL/summernote-floats-bs">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="summernote-floats-bs" class="anchor" href="#summernote-floats-bs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>summernote-floats-bs</h1>
+
+<p>Bootstrap Floats for <a href="http://summernote.org/">Summernote WYSIWYG Editor</a></p>
+
+<p>Replace (or extend) image popover buttons (using float: attributes) with a new set of buttons that inject proper Bootstrap classes (pull-right / pull-left / none) while keeping any other class in the image.</p>
+
+<p><img src="screenshot.jpg?raw=true" alt="Screenshot" title="Screenshot"></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>First include <code>summernote-floats-bs.js</code> or it's minified version <code>summernote-floats-bs.min.js</code> after <code>summernote</code></p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.1/summernote.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+
+&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>summernote-floats-bs.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Then just initialize the toolbar replacing the float buttons <code>( floatBSLeft / floatBSRight / floatBSNone )</code></p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-c1">document</span>).<span class="pl-en">ready</span>(<span class="pl-k">function</span>() {
+    <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>#texto<span class="pl-pds">'</span></span>).<span class="pl-en">summernote</span>({
+        lang<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>en-US<span class="pl-pds">'</span></span>,
+        dialogsInBody<span class="pl-k">:</span> <span class="pl-c1">true</span>,
+        popover<span class="pl-k">:</span> {
+            image<span class="pl-k">:</span> [
+            [<span class="pl-s"><span class="pl-pds">'</span>imagesize<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>imageSize100<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>imageSize50<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>imageSize25<span class="pl-pds">'</span></span>]],
+            <span class="pl-c">/* ['float', ['floatLeft', 'floatRight', 'floatNone']], */</span>
+            <span class="pl-c">/* Those are the old regular float buttons */</span>
+            [<span class="pl-s"><span class="pl-pds">'</span>floatBS<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>floatBSLeft<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>floatBSNone<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>floatBSRight<span class="pl-pds">'</span></span>]],
+            <span class="pl-c">/* Those come from the BS plugin, in any order, you can even keep both! */</span>
+            [<span class="pl-s"><span class="pl-pds">'</span>remove<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>removeMedia<span class="pl-pds">'</span></span>]],
+            ],
+        }
+    });
+});</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/MarcosBL">MarcosBL</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
